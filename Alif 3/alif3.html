@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <title>alif3rd</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+   <body>
+     <div class="flex-container">
+      <div class="main">
+        <div class="navbar">
+             <div class=" icon">
+               <h2 class="logo"> Ramadan</h2>
+               <h5 class="logoo">1444H</h5>
+             </div>
+           <div class="menu">
+               <ul>
+                 <div class="rem"><li>Reminder</li></div>
+                 <li><a href="a">Tradition</a></li>
+                 <li><a href="a">Culture</a></li>
+                 <li><a href="a">Doa</a></li>
+              </ul>
+           </div>
+             <div class="remined">
+               <button type="button" class="remindeme-btn">&#x1F514;Reminde Me</button> 
+             </div>
+        </div>
+        <div class="col-lg-6">
+
+            <center>ROAD  TO  RAMADAN  1444H</center>
+            <div class="time">
+              <p id="countdown"></p>
+                <ul>
+                    <li>01</li>
+                    <li>12</li>
+                    <li>56</li>
+                    <div class="second"><li>05</li></div>
+                  
+                </ul>
+            </div>
+            <div class="timew">
+                <ul>
+                  <li>DAYS</li>
+                  <li>HOURS</li>
+                  <li>MINUTES</li>
+                  <li>SECONDS</li>
+                </ul>
+            </div>
+              <div class="p"> <P>This blessed month provides an oppertunity for Muslims to get closer to Allah and </P>
+                <P>increase their good deeds. Prepare yourself by reading the Quran and praying, as well</p>
+                <p>as doing more good deeds.  </P>
+              </div>
+
+        </div>
+        
+    </div>
+    </div>
+    <script>
+        const ramadanDate = new Date("April 10, 2023 00:00:00");
+        const countdown = document.getElementById("countdown");
+        setInterval(function() { 
+           const now = new Date().getTime();
+           const timeRemaining =ramadanDate - now;
+           const day = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+           const hours = Math.floor((timeRemaining % (1000* 60 *60 *24)) / (100 * 60 * 60 ));
+           const minutes =Math.floor((timeRemaining % (1000* 60 * 60 )) / (1000 * 60));
+           const second = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                countdown.innerHTML = "ramadan starts in:" + days + "d " + hours + "h" + minutes + "m " + seconds + "s " ; 
+          }, 1000);
+    </script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
